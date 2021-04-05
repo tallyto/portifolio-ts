@@ -9,7 +9,7 @@ class App {
     this.server = Express()
     this.middlewares()
     this.routes()
-    this.database()
+    // this.database()
   }
 
   private middlewares(): void{

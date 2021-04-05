@@ -11,7 +11,7 @@ router.get('/about', (req, res)=>{
   res.render('pages/about')
 })
 
-router.post('/user', UserController.createUser)
+// router.post('/user', UserController.createUser)
 
 router.get('*', (req, res)=> {
   res.send('<h1>Página não encontrada :(</h1>')
