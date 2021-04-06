@@ -7,9 +7,7 @@
     "test": "jest",
     "start": "node src/server",
     "postinstall": "tsc",
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "remove": "rm -rf src/**/*.js",
-    "remove:map": "rm -rf src/**/*.map"
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
   },
   "keywords": [],
   "author": "",

@@ -1,6 +1,6 @@
 import Express from 'express'
 import Router from './routes'
-import mongoose from 'mongoose'
+// import mongoose from 'mongoose'
 import {join} from 'path'
 var expressLayouts = require('express-ejs-layouts');
 class App {
@@ -24,9 +24,9 @@ class App {
     this.server.use(Router)
   }
 
-  private database(): void {
-    mongoose.connect('mongodb://localhost:27017/myapp', {useNewUrlParser: true});
-  }
+  // private database(): void {
+  //   mongoose.connect('mongodb://localhost:27017/myapp', {useNewUrlParser: true});
+  // }
 }
 
 export default new App().server
