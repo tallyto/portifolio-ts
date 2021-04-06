@@ -15,6 +15,7 @@ class App {
   private middlewares(): void{
     this.server.use(Express.json())
     this.server.set('view engine', 'ejs')
+    this.server.use(Express.static('public'))
     this.server.set('views',join(__dirname,'views'))
     this.server.use(expressLayouts)
   }
