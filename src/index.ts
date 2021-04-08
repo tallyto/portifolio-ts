@@ -1,6 +1,7 @@
 import Express from 'express'
 import Router from './routes'
 // import mongoose from 'mongoose'
+import Cors from 'cors'
 import {join} from 'path'
 var expressLayouts = require('express-ejs-layouts');
 class App {
@@ -14,6 +15,7 @@ class App {
 
   private middlewares(): void{
     this.server.use(Express.json())
+    this.server.use(Cors())
     this.server.set('view engine', 'ejs')
     this.server.use(Express.static('public'))
     this.server.set('views',join(__dirname,'views'))
