@@ -4,17 +4,17 @@ import {Router} from 'express'
 const router = Router()
 
 router.get('/', (req, res)=>{
-  res.render('pages/main')
+  res.render('pages/main',{title: 'inicio'})
 })
 
-router.get('/about', (req, res)=>{
-  res.render('pages/about')
+router.get('/projetos', (req, res)=>{
+  res.render('pages/projetos', {title: 'projetos'})
 })
 
 // router.post('/user', UserController.createUser)
 
 router.get('*', (req, res)=> {
-  res.send('<h1>Página não encontrada :(</h1>')
+  res.render('pages/404',{title: 'not found'})
 } )
 
 export default router
