@@ -16,10 +16,11 @@ class App {
   private middlewares(): void{
     this.server.use(Express.json())
     this.server.use(Cors())
+    this.server.set('view engine', 'ejs')
+    this.server.use(expressLayouts)
     this.server.use(Express.static('public'))
     this.server.set('views',join(__dirname,'views'))
-    this.server.set('layout', join(__dirname,'views', 'pages', 'layout.ejs'))
-    this.server.set('view engine', 'ejs')
+
 
   }
 
