@@ -13,7 +13,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/cors": "^2.8.12",
     "@types/express": "^4.17.11",
+    "@types/express-handlebars": "^5.3.1",
     "@types/jest": "^26.0.22",
     "@types/node": "^14.14.37",
     "jest": "^27.2.5",
@@ -23,6 +25,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4"
   }
 }
